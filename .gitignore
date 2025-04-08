@@ -1,0 +1,30 @@
+# .gitignore para proyectos Android
+
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+/local.gradle
+*.apk
+*.ap_
+*.dex
+*.class
+*.log
+*.keystore
+*.jks
+*.hprof
+.idea/
+
+# Evita subir archivos generados
+build/
+captures/
