@@ -65,3 +65,14 @@ fun CardDemo() {
         Text(text = "Esto es una Card", modifier = Modifier.padding(16.dp))
     }
 }
+@Composable
+fun TopAppBarDemo() {
+    TopAppBar(
+        title = { Text("Mi App") },
+        navigationIcon = {
+            IconButton(onClick = {}) {
+                Icon(Icons.Default.Menu, contentDescription = "Menu")
+            }
+        }
+    )
+}
