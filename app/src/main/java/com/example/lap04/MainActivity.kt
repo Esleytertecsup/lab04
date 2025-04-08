@@ -45,3 +45,12 @@ fun GreetingPreview() {
         Greeting("Android")
     }
 }
+
+@Composable
+fun LazyColumnDemo() {
+    LazyColumn {
+        items(10) { index ->
+            Text(text = "Item #$index", modifier = Modifier.padding(16.dp))
+        }
+    }
+}
