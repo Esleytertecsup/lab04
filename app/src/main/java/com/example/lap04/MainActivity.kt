@@ -54,3 +54,14 @@ fun LazyColumnDemo() {
         }
     }
 }
+@Composable
+fun CardDemo() {
+    Card(
+        modifier = Modifier
+            .padding(16.dp)
+            .fillMaxWidth(),
+        elevation = CardDefaults.cardElevation(defaultElevation = 8.dp)
+    ) {
+        Text(text = "Esto es una Card", modifier = Modifier.padding(16.dp))
+    }
+}
