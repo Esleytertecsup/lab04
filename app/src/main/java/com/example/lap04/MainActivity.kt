@@ -88,11 +88,20 @@ fun CardDemo() {
 @Composable
 fun TopAppBarDemo() {
     TopAppBar(
-        title = { Text("Mi App") },
+        title = {
+            Text(
+                text = "Mi Aplicación Mejorada",
+                color = Color.White,
+                fontWeight = FontWeight.Bold
+            )
+        },
         navigationIcon = {
             IconButton(onClick = {}) {
-                Icon(Icons.Default.Menu, contentDescription = "Menu")
+                Icon(Icons.Filled.Menu, contentDescription = "Menú", tint = Color.White)
             }
-        }
+        },
+        colors = TopAppBarDefaults.mediumTopAppBarColors(
+            containerColor = Color(0xFF1976D2)
+        )
     )
 }
