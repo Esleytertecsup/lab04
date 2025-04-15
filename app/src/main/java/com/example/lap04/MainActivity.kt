@@ -48,12 +48,32 @@ fun GreetingPreview() {
 
 @Composable
 fun LazyColumnDemo() {
-    LazyColumn {
+    LazyColumn(
+        modifier = Modifier
+            .fillMaxSize()
+            .background(Color(0xFFE0F7FA))
+            .padding(8.dp)
+    ) {
         items(10) { index ->
-            Text(text = "Item #$index", modifier = Modifier.padding(16.dp))
+            Card(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(vertical = 4.dp),
+                colors = CardDefaults.cardColors(containerColor = Color.White),
+                elevation = CardDefaults.cardElevation(4.dp)
+            ) {
+                Text(
+                    text = "Ítem número $index",
+                    modifier = Modifier.padding(16.dp),
+                    fontSize = 18.sp,
+                    fontWeight = FontWeight.Medium
+                )
+            }
         }
     }
 }
+
+
 @Composable
 fun CardDemo() {
     Card(
